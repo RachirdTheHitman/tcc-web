@@ -8,7 +8,7 @@ import { MeDocument, MeQuery, useLoginMutation } from "../generated/graphql";
 import { toErrorMap } from "../utils/toErrorMap";
 import { withApollo } from "../utils/withApollo";
 
-const Login: React.FC<{}> = ({}) => {
+const Login: React.FC = () => {
   const router = useRouter();
   const [login] = useLoginMutation();
   return (
@@ -70,4 +70,4 @@ const Login: React.FC<{}> = ({}) => {
   );
 };
 
-export default withApollo({ ssr: false })(Login);
+export default withApollo({ ssr: true })(Login);
