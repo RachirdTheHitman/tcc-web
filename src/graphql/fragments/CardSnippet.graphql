@@ -1,0 +1,18 @@
+fragment CardSnippet on Card {
+  id
+  image
+  name
+  createdAt
+  updatedAt
+  value
+  specialization
+  description
+  users {
+    id
+    username
+    email
+    coin
+    createdAt
+    updatedAt
+  }
+}

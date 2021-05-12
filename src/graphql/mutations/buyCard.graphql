@@ -1,0 +1,3 @@
+mutation BuyCard($id: Int!) {
+  buyCard(id: $id)
+}

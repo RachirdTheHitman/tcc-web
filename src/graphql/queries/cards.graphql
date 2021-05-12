@@ -1,0 +1,8 @@
+query Cards($limit: Int!, $cursor: String) {
+  cards(limit: $limit, cursor: $cursor) {
+    hasMore
+    cards {
+      ...CardSnippet
+    }
+  }
+}

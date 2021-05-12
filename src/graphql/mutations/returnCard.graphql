@@ -1,0 +1,3 @@
+mutation ReturnCard($id: Int!) {
+  returnCard(id: $id)
+}
